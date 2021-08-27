@@ -8,19 +8,14 @@ interface IERC1155 {
 }
 
 contract DisperseNft {
-    function disperse(IERC1155 token, address[] calldata recipients, uint256[] calldata ids, uint256[] calldata values, bytes calldata data) public {
-        bool approval = token.isApprovedForAll(msg.sender, address(this));
-        if (!approval) {
-            revert("Sender has not approved disperse contract");
-        }
+    function disperse(IERC1155 token, address[] calldata recipients, uint256[] calldata ids, uint256[] calldata values, bytes calldata data) external {
+        require(token.isApprovedForAll(msg.sender, address(this)), "Sender has not approved disperse contract");
 
         for (uint256 i = 0; i < ids.length; i++) {
             uint256 preBalance = token.balanceOf(msg.sender, ids[i]);
             uint256 reqBalance = recipients.length * values[i];
 
-            if (reqBalance > preBalance) {
-                revert("Insufficient balance");
-            }
+            require(reqBalance <= preBalance, "Insufficient balance");
         }
 
         for (uint256 i = 0; i < recipients.length; i++) {
