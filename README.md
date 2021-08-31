@@ -10,7 +10,7 @@ Developed with Hardhat, compiled with solidity 0.8.4.
 
 Frontend: https://github.com/fafrd/disperse-nft-web
 
-Ethereum deployment: TODO<br>
+Ethereum deployment: [0xb26E9fF02fc659738C4A2888e0Ed58FF0b7C2763](https://etherscan.io/address/0xb26e9ff02fc659738c4a2888e0ed58ff0b7c2763)<br>
 Rinkeby deployment: [0x7b194fBF78eeb62044985d37c9c4cDF6F4f0CA28](https://rinkeby.etherscan.io/address/0x7b194fBF78eeb62044985d37c9c4cDF6F4f0CA28)
 
 ## How it works
@@ -45,3 +45,8 @@ For example, if you wanted to send [this Rarible NFT](https://rinkeby.rarible.co
 
     fswatch test/test.js contracts/Disperse.sol | xargs -n1 -I{} npx hardhat test
 
+## Deploy to testnet/mainnet
+
+Adjust hardhat.config.js as necessary for rinkeby, mainnet etc, then run
+
+    node scripts/deploy.js

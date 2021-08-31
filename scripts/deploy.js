@@ -14,9 +14,12 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
+  console.log("get contract factory");
   const Disperse = await hre.ethers.getContractFactory("DisperseNft");
+  console.log("deploying...")
   const disperse = await Disperse.deploy();
 
+  console.log("awaiting disperse.deployed()")
   await disperse.deployed();
 
   console.log("Disperse deployed to:", disperse.address);
