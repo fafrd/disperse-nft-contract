@@ -11,7 +11,9 @@ Developed with Hardhat, compiled with solidity 0.8.4.
 Frontend: https://github.com/fafrd/disperse-nft-web
 
 Ethereum deployment: [0xb26E9fF02fc659738C4A2888e0Ed58FF0b7C2763](https://etherscan.io/address/0xb26e9ff02fc659738c4a2888e0ed58ff0b7c2763)<br>
-Rinkeby deployment: [0x7b194fBF78eeb62044985d37c9c4cDF6F4f0CA28](https://rinkeby.etherscan.io/address/0x7b194fBF78eeb62044985d37c9c4cDF6F4f0CA28)
+Rinkeby deployment: [0x7b194fBF78eeb62044985d37c9c4cDF6F4f0CA28](https://rinkeby.etherscan.io/address/0x7b194fBF78eeb62044985d37c9c4cDF6F4f0CA28)<br>
+Polygon deployment: [0x219E5cE7B2667a2Bd07C583DEAF5731e64b02cF6](https://polygonscan.com/address/0x219E5cE7B2667a2Bd07C583DEAF5731e64b02cF6)<br>
+Mumbai deployment: [0x4Dc10B9c07DC00A6af5F8441324B8429D1e2C043](https://mumbai.polygonscan.com/address/0x4dc10b9c07dc00a6af5f8441324b8429d1e2c043)
 
 ## How it works
 
