@@ -10,10 +10,17 @@ Developed with Hardhat, compiled with solidity 0.8.4.
 
 Frontend: https://github.com/fafrd/disperse-nft-web
 
+**mainnets:**
 Ethereum deployment: [0xb26E9fF02fc659738C4A2888e0Ed58FF0b7C2763](https://etherscan.io/address/0xb26e9ff02fc659738c4a2888e0ed58ff0b7c2763)<br>
-Rinkeby deployment: [0x7b194fBF78eeb62044985d37c9c4cDF6F4f0CA28](https://rinkeby.etherscan.io/address/0x7b194fBF78eeb62044985d37c9c4cDF6F4f0CA28)<br>
 Polygon deployment: [0x219E5cE7B2667a2Bd07C583DEAF5731e64b02cF6](https://polygonscan.com/address/0x219E5cE7B2667a2Bd07C583DEAF5731e64b02cF6)<br>
+BSC deployment: [0x4Dc10B9c07DC00A6af5F8441324B8429D1e2C043](https://bscscan.com/address/0x4Dc10B9c07DC00A6af5F8441324B8429D1e2C043)
+
+**testnets:**
+Sepolia deployment: [0x6F35BA5c3c3663A07e091DF495a80727d44E82F2](https://sepolia.etherscan.io/address/0x6f35ba5c3c3663a07e091df495a80727d44e82f2)<br>
+Goerli deployment: [0x1a975C4b7E1481B4978EF071a61033C8d42962e2](https://goerli.etherscan.io/address/0x1a975c4b7e1481b4978ef071a61033c8d42962e2)<br>
+Rinkeby deployment: [0x7b194fBF78eeb62044985d37c9c4cDF6F4f0CA28](https://rinkeby.etherscan.io/address/0x7b194fBF78eeb62044985d37c9c4cDF6F4f0CA28)<br>
 Mumbai deployment: [0x4Dc10B9c07DC00A6af5F8441324B8429D1e2C043](https://mumbai.polygonscan.com/address/0x4dc10b9c07dc00a6af5f8441324b8429d1e2c043)
+BSC testnet deployment: [0x4Dc10B9c07DC00A6af5F8441324B8429D1e2C043](https://testnet.bscscan.com/address/0x4Dc10B9c07DC00A6af5F8441324B8429D1e2C043)
 
 ## How it works
 
@@ -49,6 +56,6 @@ For example, if you wanted to send [this Rarible NFT](https://rinkeby.rarible.co
 
 ## Deploy to testnet/mainnet
 
-Adjust hardhat.config.js as necessary for rinkeby, mainnet etc, then run
+Add your network to hardhat.config.js, then run
 
-    node scripts/deploy.js
+    PRIVATE_KEY=[your_priv_key] npx hardhat run scripts/deploy.js --network sepolia
